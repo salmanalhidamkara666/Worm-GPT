@@ -180,7 +180,7 @@ export default async function handler(req, res) {
 
   const geminiKeys = getApiKeys('GEMINI_API_KEYS', 'GEMINI_API_KEY');
   const openRouterKeys = getApiKeys('OPENROUTER_API_KEYS', 'OPENROUTER_API_KEY');
-  const geminiModel = process.env.GEMINI_MODEL || 'gemma-4-26b-a4b-it';
+  const geminiModel = process.env.GEMINI_MODEL || 'gemma-3-27b-it';
   const openRouterModel = process.env.OPENROUTER_MODEL || 'nvidia/nemotron-3.5-lightning:free';
   const searchQuery = getSearchQuery(contents);
   let searchContext = '';
